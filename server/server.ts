@@ -1,12 +1,12 @@
-import express, { Express } from 'express';
+import express from 'express';
 import dotenv from 'dotenv';
 
 import * as routes from "./routes";
 
 dotenv.config();
 
-const app: Express = express();
-const port: Number = Number(process.env.PORT);
+const app = express();
+const port = process.env.PORT;
 
 routes.run( app );
 

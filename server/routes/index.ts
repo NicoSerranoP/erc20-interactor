@@ -9,19 +9,20 @@ const index = (app: express.Application) => {
             'routes': [
                 {
                     'name':'Visualize',
-                    'url': '/erc20/visualize',
-                    'description': 'See the smart contract attributes'
+                    'url': '/erc20/visualize/<contractAddress>',
+                    'method': 'GET',
+                    'params': {},
+                    'description': 'See the smart contract attributes and state'
                 },
                 {
-                    'name':'Interact',
-                    'url': '/erc20/visualize',
-                    'description': 'See the smart contract attributes'
+                    'name':'Mint',
+                    'method': 'POST',
+                    'params': {
+                        'toAddress': 'string',
+                    },
+                    'url': '/erc20/mint/<contractAddress>',
+                    'description': 'Mint a new token'
                 },
-                {
-                    'name':'Switch',
-                    'url': '/erc20/visualize',
-                    'description': 'See the smart contract attributes'
-                }
             ],
         });
     });
