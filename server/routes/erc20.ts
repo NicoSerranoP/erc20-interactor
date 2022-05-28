@@ -1,5 +1,8 @@
 import express, { Request, Response } from 'express';
 import { ethers } from "ethers";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const apiRoute = '/erc20';
 const abi = new ethers.utils.Interface(process.env.ABI!)
