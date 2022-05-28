@@ -1,3 +1,7 @@
+# ERC2 Interactor
+server/node_modules
+server/dist
+
 # Logs
 logs
 *.log
