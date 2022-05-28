@@ -25,7 +25,12 @@ The node service is a web server that allows you to interact with specific ERC20
 5. Visit home for API instructions ```https://localhost:3300```
 
 ## React App (/app)
-TODO
+This app simply connects your Metamask wallet to an existing ERC20 smart contract set up in the .env files. (Sorry for the poor UI design, I hope one day I can make it better). To use it:
+1. Clone the repository ```git clone https://github.com/NicoSerranoP/erc20-interactor```
+2. Go to the directory ```cd erc20-interactor/blockchain```
+3. Install dependencies ```yarn install```
+4. Run the app ```npm run start```
+5. Visit the home page of the app ```https://localhost:3000```
 
 
 # To check how this works
