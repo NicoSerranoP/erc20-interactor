@@ -41,6 +41,7 @@ This app simply connects your Metamask wallet to an existing ERC20 smart contrac
 3. Copy the ABI into the .env file in the *server* directory. You can use the newly generated contract address or the one here [https://goerli.etherscan.io/address/0x4089b4000291a4e7c15714a1f1e630f4845ed645](https://goerli.etherscan.io/address/0x4089b4000291a4e7c15714a1f1e630f4845ed645)
 4. Go to the *server* directory and start the application using the following command: ```npm run dev```
 5. Visit the home [http://localhost:3300/](http://localhost:3300/) route in your browser to see how you can interact with the API. I did not use POST methods in order to make it simpler and faster to check (but right now I noticed that the home page might look better with some JSON prettifier)
+6. To check how the react application works, run ```npm run start``` in the *app* directory. Remember to set up the .env values for the contract address and abi.
 
 ### APIs:
 1. **Visualize:** shows you the main information of the ERC20 token. If the address does not have code or has a different ABI than a ERC20 then it notifies the user the incident. To get the data from the contract I use multiple Promises to optimize read-only time.
