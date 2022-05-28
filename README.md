@@ -3,7 +3,7 @@
 This repository contains three main apps/functionalities:
 
 ## Smart contracts (/contracts)
-This functionality helps you deploy a ERC20 token using the hardhat framework. The contracts will be used by the following two applications. You can deploy the ERC20 contract by following these steps:
+This functionality helps you deploy a ERC20 token using the hardhat framework. The contracts will be used by the following applications. You can deploy the ERC20 contract by following these steps:
 1. Clone the repository ```git clone https://github.com/NicoSerranoP/erc20-interactor```
 2. Go to the directory ```cd erc20-interactor/blockchain```
 3. Install dependencies ```yarn install```
@@ -12,6 +12,8 @@ This functionality helps you deploy a ERC20 token using the hardhat framework. T
 6. Copy the smart contract address and abi
 
 *Remember to check that the ABI is the right one for the ERC20 with-mint-function contract. To get it use the hardhat framework in this repository.*
+
+*Check out the use of NatSpec comments in the ERC20.sol file explaining why a mint function was created*
 
 ## Node Service (/server)
 The node service is a web server that allows you to interact with specific ERC20 contracts. All routes are APIs that respond JSON values so you can easily use them in your app. You can run the server by following these steps:
