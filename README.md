@@ -21,6 +21,7 @@ The node service is a web server that allows you to interact with specific ERC20
 4. Run ```npm run dev```
 5. Visit home for API instructions ```https://localhost:3300```
 
+*Remember to check that the ABI is the right one for the ERC20 with-mint-function contract. To get it use the smart contracts application in this repository.*
 
 ## React App (/app)
 TODO
