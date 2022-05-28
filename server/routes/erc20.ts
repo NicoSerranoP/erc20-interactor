@@ -65,7 +65,6 @@ const erc20 = ( app: express.Application ) => {
 
     app.get(apiRoute + '/check/:hash', async (req: Request, res: Response) => {
         provider.getTransactionReceipt(req.params.hash).then((receipt) => {
-            console.log(receipt);
             res.json({
                 'message':'The transaction receipt is valid. Check number of confirmations in the receipt object',
                 'receipt': receipt,

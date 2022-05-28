@@ -16,12 +16,17 @@ const index = (app: express.Application) => {
                 },
                 {
                     'name':'Mint',
-                    'method': 'POST',
-                    'params': {
-                        'toAddress': 'string',
-                    },
-                    'url': '/erc20/mint/<contractAddress>',
-                    'description': 'Mint a new token'
+                    'method': 'GET',
+                    'params': {},
+                    'url': '/erc20/mint/<contractAddress>/to/<toAddress>/amount/<amount>',
+                    'description': 'Mint a specific amount of tokens to a specific address'
+                },
+                {
+                    'name':'Check',
+                    'method': 'GET',
+                    'params': {},
+                    'url': '/erc20/check/<transactionHash>',
+                    'description': 'Check if a specific transaction has been accepted on the blockchain and other receipt details'
                 },
             ],
         });
